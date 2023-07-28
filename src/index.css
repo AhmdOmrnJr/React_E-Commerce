@@ -1,0 +1,26 @@
+
+
+ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
+*{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+ 
+  background-image: url('./images/light-patten.svg');
+}
+nav,footer{
+  background-color: #eee;
+}
+a{
+  text-decoration: none !important;
+}
+.item a{
+  color: white !important;
+}
