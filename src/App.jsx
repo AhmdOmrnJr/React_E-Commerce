@@ -15,7 +15,7 @@ import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { QueryClient, QueryClientProvider } from 'react-query';
 // import { ReactQueryDevtools } from 'react-query/devtools';
-import Address from './Components/Cart/Address/Address';
+import Address from './Components/Address/Address';
 import Orders from './Components/Orders/Orders';
 import { Provider } from 'react-redux';
 import store from './redux/Store';
