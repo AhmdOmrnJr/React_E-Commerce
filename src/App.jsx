@@ -24,6 +24,7 @@ import BrandProducts from './Components/BrandProducts/BrandProducts';
 import ForgotPasswords from './Components/ForgotPasswords/ForgotPasswords';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import VerifyResetCode from './Components/VerifyResetCode/VerifyResetCode';
+import LoggedIn from './Components/LoggedIn/LoggedIn';
 
 function App() {
 
@@ -33,11 +34,11 @@ function App() {
       path: '', element: <Layout />, children: [
         { path: '', element: <Navigate to={'home'} /> },
         { path: 'home', element: <ProtectedRoute> <Home /> </ProtectedRoute> },
-        { path: 'register', element: <Register /> },
-        { path: 'login', element: <Login /> },
-        { path: 'forgotpassword', element: <ForgotPasswords /> },
-        { path: 'resetPassword', element: <ResetPassword /> },
-        { path: 'verifyresetcode', element: <VerifyResetCode /> },
+        { path: 'register', element: <LoggedIn> <Register /> </LoggedIn> },
+        { path: 'login', element: <LoggedIn> <Login /> </LoggedIn> },
+        { path: 'forgotpassword', element: <LoggedIn> <ForgotPasswords /> </LoggedIn> },
+        { path: 'resetPassword', element: <LoggedIn> <ResetPassword /> </LoggedIn> },
+        { path: 'verifyresetcode', element: <LoggedIn> <VerifyResetCode /> </LoggedIn> },
         { path: 'cart', element: <ProtectedRoute> <Cart /> </ProtectedRoute> },
         { path: 'products', element: <ProtectedRoute> <Products /> </ProtectedRoute> },
         { path: 'productDetails/:id', element: <ProtectedRoute> <ProductDetails /> </ProtectedRoute> },
