@@ -2,7 +2,7 @@
   "name": "week3_session2",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://AhmdOmrnJr.github.io/React_E-Commerce.git",
+  "homepage" : "https://ahmdomrnjr.github.io/React_E-Commerce/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@reduxjs/toolkit": "^2.2.5",
